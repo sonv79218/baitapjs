@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- b1 tạo các đối tượng -->
+    <h1>bài 2</h1>
+    <!-- phần nội dung thay đổi -->
+    <div id="nd" style="color: aqua">nội dung ban đầu</div>
+    <input type="button" id="btn1" value="nd1" />
+    <input type="button" id="btn2" value="nd2" />
+
+    <!-- b2 gán các đối tượng vào biến -->
+    <script>
+      var button1 = document.getElementById("btn1");
+      var button2 = document.getElementById("btn2");
+      var div = document.getElementById("nd");
+      //   b3 lập ra chức năng khi click vào cho button 1.
+      button1.onclick = function () {
+        div.innerHTML = "noi dung nay thay doi bang btn1";
+
+        button2.onclick = function () {
+          div.innerHTML = "noi dung nay btn2 ";
+        };
+      };
+    </script>
+  </body>
+</html>

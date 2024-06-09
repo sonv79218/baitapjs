@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- b1 tạo các đối tượng -->
+    <h1>bài 3 thay đổi màu nền bằng nút bấm</h1>
+    <div id="maunen">ấn vào nút để thay màu nền</div>
+    <input type="button" id="btn1" value="mauxanh" />
+    <input type="button" id="btn2" value="maudo" />
+    <script>
+      var button1 = document.getElementById("btn1");
+      var button2 = document.getElementById("btn2");
+      var div = document.getElementById("maunen");
+      // chuc nang
+      button1.onclick = function () {
+        div.style.background = "blue";
+      };
+      button2.onclick = function () {
+        div.style.background = "red";
+      };
+    </script>
+    KO
+  </body>
+</html>
